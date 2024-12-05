@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/chatbot.css" rel="stylesheet">
+    <title>Chatbot - Meu Site</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="m-0 border-0 pb-5">
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Projeto Fintech</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="chatbot.html">Chat bot</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">Login</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Chat Container -->
+    <div class="container" style="margin-top: 80px;">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow">
+                    <div class="card-header bg-primary-custom text-white">
+                        <div class="d-flex align-items-center">
+                            <img src="img/bot-avatar.png" class="rounded-circle me-2" style="width: 40px; height: 40px;" alt="Bot Avatar">
+                            <h5 class="mb-0">Assistente Virtual</h5>
+                        </div>
+                    </div>
+                    <div class="card-body chat-body">
+                        <!-- Mensagens -->
+                        <div class="chat-messages" id="chatMessages">
+                            <div class="message bot-message">
+                                <div class="message-content">
+                                    Olá! Como posso ajudar você hoje?
+                                </div>
+                            </div>
+                            
+                            <div class="message user-message">
+                                <div class="message-content">
+                                    Preciso de ajuda com meus investimentos
+                                </div>
+                            </div>
+                            
+                            <div class="message bot-message">
+                                <div class="message-content">
+                                    Claro! Posso te ajudar com informações sobre seus investimentos. O que você gostaria de saber especificamente?
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Input de mensagem -->
+                        <div class="chat-input mt-3">
+                            <form class="d-flex gap-2">
+                                <input type="text" class="form-control" placeholder="Digite sua mensagem...">
+                                <button type="submit" class="btn btn-primary send-button" aria-label="Send message">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16" aria-hidden="true">
+                                        <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

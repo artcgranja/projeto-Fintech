@@ -1,0 +1,23 @@
+.navbar, .offcanvas, .card-header, .footer {
+    background-color: #130626 !important;
+}
+
+.btn-dark {
+    background-color: #130626;
+    border-color: #130626;
+}
+
+.btn-dark:hover {
+    background-color: #674FFF;
+    border-color: #674FFF;
+}
+
+.nav-link:hover, 
+.text-decoration-none:hover {
+    color: #674FFF !important;
+}
+
+.form-check-input:checked {
+    background-color: #674FFF;
+    border-color: #674FFF;
+}

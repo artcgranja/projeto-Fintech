@@ -1,0 +1,41 @@
+/* Mantendo as cores do login.css e adicionando estilos específicos */
+.navbar, .offcanvas {
+    background-color: #130626 !important;
+}
+
+.bg-primary-custom {
+    background-color: #130626 !important;
+}
+
+.card {
+    border-radius: 15px;
+    border: none;
+}
+
+.card-header {
+    border-radius: 15px 15px 0 0 !important;
+    background-color: #130626 !important;
+}
+
+.chart-container {
+    position: relative;
+    margin: auto;
+    height: 300px;
+}
+
+/* Estilo para o avatar */
+.rounded-circle {
+    border: 3px solid #674FFF;
+}
+
+/* Responsividade */
+@media (min-width: 992px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+.profile-avatar {
+    width: 60px;
+    height: 60px;
+} 
